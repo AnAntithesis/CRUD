@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body" class="">
+    <nav class="navbar navbar-expand-lg fixed-top position-relative">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img height="50px" width="50px" src="js.png"
+        /></a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img height="50px" width="50px" src="js.png" />
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active mx-lg-2" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-lg-2" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-lg-2" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-lg-2" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button id="theme-switch">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+            />
+          </svg>
+        </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <div
+      id="CrudText"
+      class="container d-flex align-items-center justify-content-center fs-1 flex-column position-relative"
+    >
+      <h1 id="CrudTitle">CRUD EXAMPLE</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="container row justify-content-center">
+        <form
+          action=""
+          id="employee-form"
+          class="row justify-content-center mb-4"
+          autocomplete="off"
+        >
+          <div class="col-8 mb-3">
+            <label id="CrudLabel" for="fName">First Name</label>
+            <input
+              class="form-control"
+              id="fName"
+              type="text"
+              placeholder="Enter First Name"
+            />
+          </div>
+          <div class="col-8 mb-3">
+            <label id="CrudLabel" for="lName">Last Name</label>
+            <input
+              class="form-control"
+              id="lName"
+              type="text"
+              placeholder="Enter Last Name"
+            />
+          </div>
+          <div class="col-8 mb-3">
+            <label id="CrudLabel" for="jDate">Join date</label>
+            <input class="form-control" id="jDate" type="text" />
+          </div>
+          <div class="col-8 mb-3">
+            <label id="CrudLabel" for="Salary">Salary</label>
+            <input
+              class="form-control"
+              id="Salary"
+              type="text"
+              placeholder="Enter Salary"
+            />
+          </div>
+          <div class="col-8">
+            <input
+              class="btn btn-success add-btn"
+              type="submit"
+              value="submit"
+            />
+          </div>
+        </form>
+        <div class="col-10 mt-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <th id="CrudTable">First Name</th>
+                <th id="CrudTable">Last Name</th>
+                <th id="CrudTable">Join Date</th>
+                <th id="CrudTable">Salary</th>
+                <th id="CrudTable">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="crudTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

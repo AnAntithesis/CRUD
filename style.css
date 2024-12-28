@@ -1,0 +1,107 @@
+:root {
+  --base-color: white;
+  --secondary-color: #dfe0e6;
+  --text-color: #111528;
+  --text-secondary: #232738;
+  --primary-button: #0071ff;
+  --accent-button: #3a435d;
+}
+.darkmode {
+  --base-color: #070b1d;
+  --secondary-color: #171c31;
+  --text-color: #ffffff;
+  --text-secondary: #a4a5b8;
+  --primary-button: #3a435d;
+  --accent-button: #0071ff;
+}
+#body {
+  background-color: var(--base-color);
+}
+.navbar {
+  background-color: var(--secondary-color);
+}
+.offcanvas-header {
+  background-color: var(--secondary-color);
+}
+.offcanvas-body {
+  background-color: var(--secondary-color);
+}
+.nav-link.active {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 20px;
+}
+.nav-link.active:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--accent-button);
+}
+a.nav-link.active.mx-lg-2 {
+  color: var(--text-color);
+}
+button.navbar-toggler {
+  background-color: var(--primary-button);
+  border: none;
+}
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--accent-button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+#theme-switch svg:last-child {
+  display: none;
+}
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
+#CrudText {
+  height: 200px;
+}
+#CrudText #CrudTitle {
+  text-align: center;
+  color: var(--text-color);
+}
+#fName {
+  border-color: var(--accent-button);
+  text-emphasis-color: var(--text-color);
+}
+#lName {
+  border-color: var(--accent-button);
+  text-emphasis-color: var(--text-color);
+}
+#jDate {
+  border-color: var(--accent-button);
+  text-emphasis-color: var(--text-color);
+}
+#Salary {
+  border-color: var(--accent-button);
+  text-emphasis-color: var(--text-color);
+}
+#CrudLabel {
+  color: var(--text-color);
+}
+#CrudSubmit {
+  background-color: var(--primary-button);
+  color: var(--text-color);
+}
+#CrudTable {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border-color: var(--accent-button);
+  text-align: center;
+}
+#CrudBody {
+  color: var(--text-color);
+  background-color: var(--base-color);
+  border-color: var(--accent-button);
+  text-align: center;
+}
